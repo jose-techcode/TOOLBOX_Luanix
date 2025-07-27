@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Execute with sudo
+# Sudo
 
 # Stop in first error
 
@@ -41,3 +41,5 @@ echo ""
 apt autoclean -y
 
 echo ""
+
+# Optional: apt clean
