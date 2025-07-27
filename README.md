@@ -4,16 +4,16 @@ The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization,
 
 # 2. Features
 
-- (sudo) audit_logs.sh - Audit of system logs, authentication/security logs, and kernel logs.
+- (sudo) ./audit_logs.sh - Audit of system logs, authentication/security logs, and kernel logs.
 
-- files_backup.sh - Backup files from the documents, music, pictures, videos and downloads
+- ./files_backup.sh - Backup files from the documents, music, pictures, videos and downloads
 directories.
 
-- files_organization.sh - Organizing file extensions into their respective directories.
+- ./files_organization.sh - Organizing file extensions into their respective directories.
 
-- (sudo) update_clean.sh - Package update and disk cleanup.
+- (sudo) ./update_clean.sh - Package update and disk cleanup.
 
-- (sudo) update_install.sh - Update packages and installs tools.
+- (sudo) ./update_install.sh - Update packages and installs tools.
 
 # 2.5 Makefile features
 
