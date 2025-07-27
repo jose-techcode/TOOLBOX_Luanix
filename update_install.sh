@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Execute with sudo
+# Sudo
 
 # Stop in first error
 
