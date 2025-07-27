@@ -90,8 +90,6 @@ echo ""
 
 # Installation of git, nano, vim, htop and neofetch
 
-# PRECISA DE SECURITY
-
 echo "-----Installing git, nano, vim, htop and neofetch-----"
 echo ""
 
