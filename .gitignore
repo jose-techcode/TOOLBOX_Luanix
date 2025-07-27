@@ -1,0 +1,21 @@
+# Logs and temporaries
+
+*.log
+*.tmp
+*.bak
+
+# IDE/Editor Configurations
+
+.vscode/
+.idea/
+*.swp
+
+# Files System
+
+.DS_Store
+Thumbs.db
+
+# Sockets and local banks
+
+*.sock
+*.db

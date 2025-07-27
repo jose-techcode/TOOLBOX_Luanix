@@ -1,0 +1,57 @@
+# 1. TOOLBOX Luanix
+
+The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts is not recommended, as they are intended solely for the Debian operating system, and due to their complexity. The shell scripting language used was Bash.
+
+# 2. Features
+
+- audit_logs.sh - Audit of system logs, authentication/security logs, and kernel logs.
+
+- files_backup.sh - Backup files from the documents, music, pictures, videos and downloads
+directories.
+
+- files_organization.sh - Organizing file extensions into their respective directories.
+
+- update_clean.sh - Package update and disk cleanup.
+
+- update_install.sh - Update packages and installs tools.
+
+# 2.5 Makefile features
+
+- logs - Audit of system logs, authentication/security logs, and kernel logs.
+
+- backup - Backup files from the documents, music, pictures, videos and downloads
+directories.
+
+- organization - Organizing file extensions into their respective directories.
+
+- clean - Package update and disk cleanup.
+
+- install - Update packages and installs tools.
+
+# 3. Technologies
+
+- Shell Scripting: Bash
+- Environment: Linux/Debian
+- File Format: Makefile
+- Code Versioning: Git
+- Containerization: Docker
+
+# 4. Clone the Repository
+
+- Bash
+
+git clone https://github.com/jose-techcode/TOOLBOX_Luanix
+
+# 5. Project Folder
+
+- Bash
+
+cd TOOLBOX_Luanix
+
+# 6. Contribution
+
+Feel free to open Issues or submit Pull Requests.
+
+# 7. License
+
+This project is licensed under the MIT license.
