@@ -19,14 +19,14 @@ directories.
 
 - (sudo) make logs - Audit of system logs, authentication/security logs, and kernel logs.
 
-- backup - Backup files from the documents, music, pictures, videos and downloads
+- make backup - Backup files from the documents, music, pictures, videos and downloads
 directories.
 
-- organization - Organizing file extensions into their respective directories.
+- make organization - Organizing file extensions into their respective directories.
 
-- (sudo) clean - Package update and disk cleanup.
+- (sudo) make clean - Package update and disk cleanup.
 
-- (sudo) install - Update packages and installs tools.
+- (sudo) make install - Update packages and installs tools.
 
 # 3. Technologies
 
