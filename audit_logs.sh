@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Execute with sudo
+# Sudo
 
 # Stop in first error
 
@@ -17,7 +17,7 @@ echo ""
 
 # Shows the last 10 lines of the authlog
 
-echo "-----Authlog-----"
+echo "-----Auth.log-----"
 echo ""
 
 tail -n 10 /var/log/auth.log
@@ -26,7 +26,7 @@ echo ""
 
 # Shows the last 10 lines of the kernlog
 
-echo "-----Kernelog-----"
+echo "-----Kern.log-----"
 echo ""
 
 tail -n 10 /var/log/kern.log
