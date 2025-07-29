@@ -24,6 +24,8 @@ apt upgrade -y
 
 echo ""
 
+# Optional: apt full-upgrade -y (can replace or remove packages if necessary to update them)
+
 # Remove orphaned dependencies
 
 echo "-----Removing oprhaned dependencies-----"
