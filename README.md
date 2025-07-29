@@ -55,3 +55,7 @@ Feel free to open Issues or submit Pull Requests.
 # 7. License
 
 This project is licensed under the MIT license.
+
+# 8. Observations
+
+This scripting toolkit is intended exclusively for the Debian operating system. It is not guaranteed to work on other Linux distros without adaptation.
