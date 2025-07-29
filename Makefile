@@ -1,6 +1,6 @@
-all: echo
+all: echo # to not run any script unintentionally
 
-# Test
+# Test (to not run any script unintentionally)
 
 echo:
 	@echo "Makefile"
