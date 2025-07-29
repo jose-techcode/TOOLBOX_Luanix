@@ -116,3 +116,5 @@ echo ""
 apt autoclean -y
 
 echo ""
+
+# Optional: apt clean (careful with your packages)

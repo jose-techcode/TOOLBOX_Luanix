@@ -42,4 +42,4 @@ apt autoclean -y
 
 echo ""
 
-# Optional: apt clean
+# Optional: apt clean (careful with your packages)
