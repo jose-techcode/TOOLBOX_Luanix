@@ -36,7 +36,7 @@ INCLUDE=(
     "${XDG_DOWNLOAD_DIR:-$HOME/Downloads}"
 )
 
-# Create the backup
+# Creates a backup within the documents directory
 
 tar -czf "$DESTINATION/$FILE" "${INCLUDE[@]}" || true
 
