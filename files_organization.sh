@@ -34,7 +34,7 @@ mkdir -p "$DOCUMENTS_DIR" "$MUSIC_DIR" "$PICTURES_DIR" "$VIDEOS_DIR"
 
 shopt -s nullglob
 
-# Function for move files
+# Function for move files (reusable)
 
 files_organization() {
     local dest="$1"
@@ -52,7 +52,7 @@ files_organization() {
     fi
 }
 
-# Calling each file type
+# Calling each file type (if there is nothing to move, the script will run normally without moving)
 
 files_organization "$DOCUMENTS_DIR" pdf doc docx odt txt rtf xls xlsx ods ppt pptx odp
 files_organization "$MUSIC_DIR" mp3 wav ogg flac aac m4a wma opus aiff alac
