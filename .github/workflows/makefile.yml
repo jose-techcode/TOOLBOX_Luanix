@@ -1,3 +1,5 @@
+# CI
+
 name: Makefile CI
 permissions:
   contents: read
