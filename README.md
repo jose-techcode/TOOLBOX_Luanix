@@ -48,6 +48,12 @@ git clone https://github.com/jose-techcode/TOOLBOX_Luanix
 
 cd TOOLBOX_Luanix
 
+# 5.5 Scripts Folder (with makefile)
+
+- Bash
+
+cd TOOLBOX_Luanix/scripts/
+
 # 6. Contribution
 
 Feel free to open Issues or submit Pull Requests.
