@@ -1,6 +1,6 @@
 # 1. TOOLBOX Luanix
 
-The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts is not recommended, as they are intended solely for the debian operating system, and due to their complexity. The shell scripting language used was bash.
+The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts in .deb is not recommended, as they are intended solely for the debian operating system, and due to their complexity. The shell scripting language used was bash. If you want, you can schedule some scripts with cron, using crontab -e.
 
 # 2. Features
 
