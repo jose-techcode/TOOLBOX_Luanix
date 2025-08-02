@@ -99,6 +99,8 @@ apt install -y git nano vim htop neofetch
 
 echo ""
 
+# Optional: -----TRIVY----- (for scan docker image)
+
 # -----CACHE & DEPENDENCIES-----
 
 # Remove orphaned dependencies
