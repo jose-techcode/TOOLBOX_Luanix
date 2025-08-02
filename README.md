@@ -32,9 +32,10 @@ directories.
 
 - Shell Scripting: Bash
 - Environment: Linux/Debian
-- File Format: Makefile
+- Files Format: Makefile & Yaml
 - Code Versioning: Git
 - Containerization: Docker
+- CI: Github Actions
 
 # 4. Clone the Repository
 
