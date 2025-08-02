@@ -1,6 +1,6 @@
 # 1. TOOLBOX Luanix
 
-The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts in .deb is not recommended, as they are intended solely for the debian operating system, and due to their complexity. The shell scripting language used was bash. If you want, you can schedule some scripts with cron, using crontab -e.
+The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts in .deb is not recommended, as they are intended solely for the debian operating system, and due to their complexity. The shell scripting language used was bash. If you want, you can schedule some scripts with cron, using crontab -e. Nano is recommended for cron.
 
 # 2. Features
 
@@ -36,6 +36,7 @@ directories.
 - Code Versioning: Git
 - Containerization: Docker
 - CI: Github Actions
+- Optional: Cron
 
 # 4. Clone the Repository
 
@@ -53,7 +54,7 @@ cd TOOLBOX_Luanix
 
 - Bash
 
-cd TOOLBOX_Luanix/scripts/
+cd scripts
 
 # 6. Contribution
 
