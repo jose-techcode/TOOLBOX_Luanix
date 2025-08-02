@@ -2,7 +2,19 @@
 
 The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts in .deb is not recommended, as they are intended solely for the debian operating system, and due to their complexity. The shell scripting language used was bash. If you want, you can schedule some scripts with cron, using crontab -e. Nano is recommended for cron.
 
-# 2. Features
+# 2. Permissions
+
+- chmod +x audit_logs.sh
+
+- chmod +x files_backup.sh
+
+- chmod +x files_organization.sh
+
+- chmod +x update_clean.sh
+
+- chmod +x update_install.sh
+
+# 2.25. Features
 
 - (sudo) ./audit_logs.sh - Audit of system logs, authentication/security logs, and kernel logs.
 
@@ -15,7 +27,7 @@ directories.
 
 - (sudo) ./update_install.sh - Update packages and installs tools.
 
-# 2.5 Makefile features
+# 2.5. Makefile features
 
 - (sudo) make logs - Audit of system logs, authentication/security logs, and kernel logs.
 
@@ -50,7 +62,7 @@ git clone https://github.com/jose-techcode/TOOLBOX_Luanix
 
 cd TOOLBOX_Luanix
 
-# 5.5 Scripts Folder (with makefile)
+# 5.5 Scripts Folder
 
 - Bash
 
