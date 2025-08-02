@@ -11,7 +11,7 @@ set -e
 echo "-----System log-----"
 echo ""
 
-tail -n 10 /var/log/syslog
+tail -n 10 /var/log/syslog # You can increase the number of log lines in -n
 
 echo ""
 
@@ -20,7 +20,7 @@ echo ""
 echo "-----Authentication log-----"
 echo ""
 
-tail -n 10 /var/log/auth.log
+tail -n 10 /var/log/auth.log # You can increase the number of log lines in -n
 
 echo ""
 
@@ -29,6 +29,6 @@ echo ""
 echo "-----Kernel log-----"
 echo ""
 
-tail -n 10 /var/log/kern.log
+tail -n 10 /var/log/kern.log # You can increase the number of log lines in -n
 
 echo ""
