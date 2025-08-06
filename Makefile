@@ -8,24 +8,24 @@ echo:
 # sudo make logs
 
 logs:
-	./audit_logs.sh
+	scripts/audit_logs.sh
 
 # make backup
 
 backup:
-	./files_backup.sh
+	scripts/files_backup.sh
 
 # make organization
 
 organization:
-	./files_organization.sh
+	scripts/files_organization.sh
 
 # sudo make clean
 
 clean:
-	./update_clean.sh
+	scripts/update_clean.sh
 
 # sudo make install
 
 install:
-	./update_install.sh
+	scripts/update_install.sh
