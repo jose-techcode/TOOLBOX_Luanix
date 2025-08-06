@@ -67,6 +67,17 @@ rm microsoft.gpg
 
 echo ""
 
+# -----GIT & CLI TOOLS-----
+
+# Installation of git, nano, vim, htop and neofetch
+
+echo "-----Installing git, nano, vim, htop and neofetch-----"
+echo ""
+
+apt install -y git nano vim htop neofetch
+
+echo ""
+
 # -----DOCKER-----
 
 # Official key
@@ -94,17 +105,6 @@ echo ""
 
 apt update
 apt install -y docker-ce docker-ce-cli containerd.io
-
-echo ""
-
-# -----GIT & CLI TOOLS-----
-
-# Installation of git, nano, vim, htop and neofetch
-
-echo "-----Installing git, nano, vim, htop and neofetch-----"
-echo ""
-
-apt install -y git nano vim htop neofetch
 
 echo ""
 
