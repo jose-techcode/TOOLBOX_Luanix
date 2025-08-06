@@ -24,11 +24,11 @@ tail -n 10 /var/log/auth.log # You can increase the number of log lines in -n
 
 echo ""
 
-# Shows the last 10 lines of the kernlog (kernel log)
+# Optional: shows the last 10 lines of the kernlog (kernel log)
 
-echo "-----Kernel log-----"
-echo ""
+# echo "-----Kernel log-----"
+# echo ""
 
-tail -n 10 /var/log/kern.log # You can increase the number of log lines in -n
+# tail -n 10 /var/log/kern.log # You can increase the number of log lines in -n
 
-echo ""
+# echo ""
