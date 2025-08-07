@@ -80,6 +80,15 @@ echo ""
 
 # -----DOCKER-----
 
+# lsb-release
+
+echo "-----Installing lsb-release-----"
+echo ""
+
+apt update && apt install -y lsb-release
+
+echo ""
+
 # Official key
 
 echo "-----Adding official key-----"
