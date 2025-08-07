@@ -37,7 +37,7 @@ echo ""
 
 # Remove orphaned dependencies
 
-echo "-----Removing oprhaned dependencies-----"
+echo "-----Removing orphaned dependencies-----"
 echo ""
 
 apt autoremove -y
