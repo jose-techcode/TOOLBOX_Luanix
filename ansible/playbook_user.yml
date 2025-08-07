@@ -2,7 +2,7 @@
   hosts: local
   tasks:
     - name: Organization of files by extensions
-      script: ~/Documentos/TOOLBOX_Luanix/scripts/files_organization.sh
+      script: ~/Documentos/TOOLBOX_Luanix/scripts/files_organization.sh # full directory path
       
     - name: Backup of files of main directories
-      script: ~/Documentos/TOOLBOX_Luanix/scripts/files_backup.sh
+      script: ~/Documentos/TOOLBOX_Luanix/scripts/files_backup.sh # full directory path
