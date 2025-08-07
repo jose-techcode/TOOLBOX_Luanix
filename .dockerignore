@@ -1,0 +1,26 @@
+# Logs and temporaries
+
+*.log
+*.tmp
+*.bak
+
+# IDE/Editor Configurations
+
+.vscode/
+.idea/
+*.swp
+
+# System files
+
+.DS_Store
+Thumbs.db
+
+# Sockets and local banks
+
+*.sock
+*.db
+
+# Git
+
+.git/
+.gitignore
