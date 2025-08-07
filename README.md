@@ -25,7 +25,7 @@ directories.
 
 - sudo ./update_clean.sh - Update and upgrade packages, remove orphaned dependencies and clean old packages.
 
-- sudo ./update_install.sh - Update and upgrade packages and installs tools.
+- sudo ./update_install.sh - Update, upgrade and installs packages.
 
 # 2.2. Makefile features (project root)
 
@@ -38,7 +38,7 @@ directories.
 
 - sudo make clean - Update and upgrade packages, remove orphaned dependencies and clean old packages.
 
-- sudo make install - Update and upgrade packages and installs tools.
+- sudo make install - Update, upgrade and installs packages.
 
 # 2.3. Ansible features (cd ansible)
 
