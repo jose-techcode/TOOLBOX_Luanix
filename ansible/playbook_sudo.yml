@@ -5,5 +5,8 @@
     - name: Update and upgrade packages, remove orphaned dependencies and clean old packages
       script: ~/Documentos/TOOLBOX_Luanix/scripts/update_clean.sh # full directory path
 
-    - name: Update, upgrade, install, autoremove and autoclean packages
+    - name: Update, upgrade and install packages
       script: ~/Documentos/TOOLBOX_Luanix/scripts/update_install.sh # full directory path
+
+    - name: Update and upgrade packages, remove orphaned dependencies and clean old packages again
+      script: ~/Documentos/TOOLBOX_Luanix/scripts/update_clean.sh # full directory path
