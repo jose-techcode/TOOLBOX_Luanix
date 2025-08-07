@@ -109,34 +109,3 @@ apt install -y docker-ce docker-ce-cli containerd.io
 echo ""
 
 # Optional: -----TRIVY----- (for scan docker image)
-
-# -----CACHE & DEPENDENCIES-----
-
-# Remove orphaned dependencies
-
-echo "-----Removing oprhaned dependencies-----"
-echo ""
-
-apt autoremove -y
-
-echo ""
-
-# Clean old packages
-
-echo "-----Cleaning old packages-----"
-echo ""
-
-apt autoclean -y
-
-echo ""
-
-# Optional: apt clean (careful with your packages)
-
-# Completely clean the cache
-
-# echo "-----Completely cleaning the cache-----"
-# echo ""
-
-# apt clean
-
-# echo ""
