@@ -88,15 +88,7 @@ cd ansible
 
 cd terraform
 
-# 6. Contribution
-
-Feel free to open Issues or submit Pull Requests.
-
-# 7. License
-
-This project is licensed under the MIT license.
-
-# 8. Run in Docker (only update_clean.sh and update_install.sh)
+# 6. Run in Docker (only some scripts)
 
 - Build the image
 
@@ -110,7 +102,7 @@ trivy image toolbox_luanix:latest
 
 docker run --rm --privileged toolbox_luanix:latest
 
-# 9. Terraform features (cd terraform)
+# 7. Terraform features (cd terraform)
 
 - terraform init - Start the project directory.
 
@@ -131,6 +123,14 @@ docker run --rm --privileged toolbox_luanix:latest
 - **Note:** 
 
 There are other Terraform commands, but they are not yet applicable to this project.
+
+# 8. Contribution
+
+Feel free to open Issues or submit Pull Requests.
+
+# 9. License
+
+This project is licensed under the MIT license.
 
 # 10. Notes
 
