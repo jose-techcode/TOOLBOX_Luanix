@@ -49,7 +49,8 @@ directories.
 # 3. Technologies
 
 - Shell Scripting: Bash
-- IaC Language: Ansible
+- IaC Language (1): Terraform
+- IaC Language (2): Ansible
 - Environment: Linux/Debian
 - Files Format: Makefile & Yaml
 - Code Versioning: Git
@@ -81,6 +82,12 @@ cd scripts
 
 cd ansible
 
+# 5.3. Terraform Folder
+
+- Bash
+
+cd terraform
+
 # 6. Contribution
 
 Feel free to open Issues or submit Pull Requests.
@@ -89,6 +96,42 @@ Feel free to open Issues or submit Pull Requests.
 
 This project is licensed under the MIT license.
 
-# 8. Notes
+# 8. Run in Docker (only update_clean.sh and update_install.sh)
 
-This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use docker for these scripts, given the dependence on the operating system for the correct functioning of the automations.
+- Build the image
+
+docker build -t toolbox_luanix .
+
+- Scan the docker image with trivy tool (false positives are expected)
+
+trivy image toolbox_luanix:latest
+
+- Run the image with privileges
+
+docker run --rm --privileged toolbox_luanix:latest
+
+# 9. Terraform features (cd terraform)
+
+- terraform init - Start the project directory.
+
+- terraform plan - Show what terraform will create, change, and destroy.
+
+- terraform apply (optional: -auto-approve) - Applies infrastructure provisioning (container).
+
+- terraform destroy (optional: -auto-approve) - Destroy infrastrcture (container).
+
+- terraform fmt - Formats the organization of .tf files.
+
+- terraform validate - Check if the terraform configuration is correct.
+
+- terraform show - Show the status of infrastructure.
+
+- terraform graph - Show the dependency graph.
+
+- **Note:** 
+
+There are other Terraform commands, but they are not yet applicable to this project.
+
+# 10. Notes
+
+This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use docker for these scripts, given the dependence on the operating system for the correct functioning of the automations. But, can use the scripts update_clean.sh and update_install.sh in docker.
