@@ -1,3 +1,5 @@
+# Install the providers
+
 terraform {
   required_providers {
     docker = {
