@@ -149,7 +149,7 @@ docker run --rm --privileged toolbox_luanix:latest
 
 - **Note:** 
 
-There are other Terraform commands, but they are not yet applicable to this project.
+There are other Terraform commands, but they are not yet applicable to this project. Terraform in this project is more for learning purposes, as the docker_trivy.sh script solves much of the problem proposed to be solved by Terraform.
 
 # 8. Contribution
 
