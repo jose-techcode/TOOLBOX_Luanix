@@ -101,7 +101,7 @@ cd terraform
 
 docker build -t toolbox_luanix .
 
-- Scan the docker image with Trivy (false positives are expected)
+- Scan the Docker image with Trivy (false positives are expected)
 
 trivy image toolbox_luanix:latest
 
@@ -109,9 +109,9 @@ trivy image toolbox_luanix:latest
 
 docker run --rm --privileged toolbox_luanix:latest
 
-# 6.1. Run in docker (only some scripts with bash)
+# 6.1. Run in Docker (only some scripts with bash)
 
-- Execute this script to build docker image and scan with Trivy
+- Execute this script to build Docker image and scan with Trivy
 
 ./docker_trivy.sh
 
@@ -119,9 +119,9 @@ docker run --rm --privileged toolbox_luanix:latest
 
 docker run --rm --privileged toolbox_luanix:latest
 
-# 6.2. Run in docker (only some scripts with makefile)
+# 6.2. Run in Docker (only some scripts with makefile)
 
-- Execute this makefile command to build docker image and scan with Trivy
+- Execute this makefile command to build Docker image and scan with Trivy
 
 make image
 
@@ -161,4 +161,4 @@ This project is licensed under the MIT license.
 
 # 10. Notes
 
-This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use docker for these scripts, given the dependence on the operating system for the correct functioning of the automations. But, can use the scripts update_clean.sh and update_install.sh in docker. Much of this project is for learning purposes.
+This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use Docker for some scripts, given the dependence on the operating system for the correct functioning of the automations. But, can use the scripts update_clean.sh and update_install.sh in Docker. Much of this project is for learning purposes.
