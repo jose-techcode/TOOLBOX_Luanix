@@ -14,7 +14,7 @@ The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization,
 
 - chmod +x update_install.sh
 
-- chmod +x docker_trivy.sh
+- (project root) chmod +x docker_trivy.sh
 
 # 2.1. Features (cd scripts)
 
