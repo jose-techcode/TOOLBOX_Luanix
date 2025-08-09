@@ -1,6 +1,6 @@
 # 1. TOOLBOX Luanix
 
-The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts in .deb is not recommended, as they are intended solely for the debian operating system, and due to their complexity. The shell scripting language used was bash. If you want, you can schedule some scripts with cron, using crontab -e. Nano is recommended for cron.
+The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts in .deb is not recommended, as they are intended solely for the debian operating system, and due to their complexity. The shell scripting language used was bash. If you want, you can schedule some scripts with cron, using crontab -e in terminal. Nano editor is recommended for cron.
 
 # 2. Permissions (cd scripts)
 
@@ -13,6 +13,8 @@ The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization,
 - chmod +x update_clean.sh
 
 - chmod +x update_install.sh
+
+- chmod +x docker_trivy.sh
 
 # 2.1. Features (cd scripts)
 
@@ -27,6 +29,8 @@ directories.
 
 - sudo ./update_install.sh - Update, upgrade and installs packages.
 
+- (project root) ./docker_trivy.sh - Build a Docker image and scan it with Trivy.
+
 # 2.2. Makefile features (project root)
 
 - sudo make logs - Audit of system log and authentication log.
@@ -39,6 +43,8 @@ directories.
 - sudo make clean - Update and upgrade packages, remove orphaned dependencies and clean old packages.
 
 - sudo make install - Update, upgrade and installs packages.
+
+- make image - Build a Docker image and scan it with Trivy.
 
 # 2.3. Ansible features (cd ansible)
 
@@ -55,6 +61,7 @@ directories.
 - Files Format: Makefile & Yaml
 - Code Versioning: Git
 - Containerization: Docker
+- Scanner (docker image): Trivy
 - CI: Github Actions
 - Optional: Cron
 
@@ -94,9 +101,29 @@ cd terraform
 
 docker build -t toolbox_luanix .
 
-- Scan the docker image with trivy tool (false positives are expected)
+- Scan the docker image with Trivy (false positives are expected)
 
 trivy image toolbox_luanix:latest
+
+- Run the image with privileges
+
+docker run --rm --privileged toolbox_luanix:latest
+
+# 6.1. Run in docker (only some scripts with bash)
+
+- Execute this script to build docker image and scan with Trivy
+
+./docker_trivy.sh
+
+- Run the image with privileges
+
+docker run --rm --privileged toolbox_luanix:latest
+
+# 6.2. Run in docker (only some scripts with makefile)
+
+- Execute this makefile command to build docker image and scan with Trivy
+
+make image
 
 - Run the image with privileges
 
