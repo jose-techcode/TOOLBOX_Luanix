@@ -1,3 +1,5 @@
+# Use an official Debian image
+
 FROM debian:latest
 
 # Create the directory for /scripts
@@ -18,6 +20,6 @@ RUN chmod +x /scripts/update_install.sh
 
 WORKDIR /workspace
 
-# Define the entrypoint with shell scripting (bash)
+# Define the entrypoint with shell scripting (bash) and run test scripts in docker container
 
 ENTRYPOINT ["/bin/bash", "-c", "/scripts/update_clean.sh && /scripts/update_install.sh && /scripts/update_clean.sh"]
