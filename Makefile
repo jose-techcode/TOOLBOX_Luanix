@@ -29,3 +29,8 @@ clean:
 
 install:
 	scripts/update_install.sh
+
+# make image
+
+image:
+	./docker_trivy.sh
