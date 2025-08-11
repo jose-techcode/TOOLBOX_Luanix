@@ -67,6 +67,29 @@ rm microsoft.gpg
 
 echo ""
 
+# -----CLAMAV-----
+
+echo "-----Installing clamav and clamtk-----"
+echo ""
+
+apt install clamav clamtk
+
+echo ""
+
+# -----UFW-----
+
+echo "-----Installing ufw and gufw-----"
+echo ""
+
+apt install ufw gufw
+
+echo "-----Enabling ufw-----"
+echo ""
+
+ufw enable
+
+echo ""
+
 # -----GIT & CLI TOOLS-----
 
 # Installation of git, nano, vim, htop and neofetch
@@ -82,39 +105,39 @@ echo ""
 
 # lsb-release
 
-echo "-----Installing lsb-release-----"
-echo ""
+# echo "-----Installing lsb-release-----"
+# echo ""
 
-apt update && apt install -y lsb-release
+# apt update && apt install -y lsb-release
 
-echo ""
+# echo ""
 
 # Official key
 
-echo "-----Adding official key-----"
-echo ""
+# echo "-----Adding official key-----"
+# echo ""
 
-curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+# curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-echo ""
+# echo ""
 
 # Repository
 
-echo "-----Adding repository-----"
-echo ""
+# echo "-----Adding repository-----"
+# echo ""
 
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+# echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
 
-echo ""
+# echo ""
 
 # Update and installation
 
-echo "-----Updating packages and installing docker-----"
-echo ""
+# echo "-----Updating packages and installing docker-----"
+# echo ""
 
-apt update
-apt install -y docker-ce docker-ce-cli containerd.io
+# apt update
+# apt install -y docker-ce docker-ce-cli containerd.io
 
-echo ""
+# echo ""
 
 # Optional: -----TRIVY----- (for scan docker image)
