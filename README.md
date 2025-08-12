@@ -52,6 +52,24 @@ directories.
 
 - ansible-playbook playbook_user.yml - Organization of files by extensions and backup of files of main directories.
 
+# 2.4. Cron guide
+
+- Open the cron file
+
+crontab -e
+
+- Add scripts that can be scheduled, like the ones below
+
+0 12 * * * /full/path/to/update_clean.sh
+0 12 * * * /full/path/to/files_organization.sh
+0 12 * * * /full/path/to/files_backup.sh
+
+- After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit
+
+- **Note:**
+
+The scripts shown above will run at noon, so make sure you know how to set up cron scheduling.
+
 # 3. Technologies
 
 - Shell Scripting: Bash
