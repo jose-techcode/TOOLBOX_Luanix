@@ -32,3 +32,12 @@ echo ""
 # tail -n 10 /var/log/kern.log # You can increase the number of log lines in -n
 
 # echo ""
+
+# Optional: shows the last 10 lines of the boot log
+
+# echo "-----Boot log-----"
+# echo ""
+
+# tail -n 10 /var/log/boot.log # You can increase the number of log lines in -n
+
+# echo ""
