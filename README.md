@@ -62,11 +62,9 @@ crontab -e
 
 0 12 * * * /full/path/to/update_clean.sh && /full/path/to/files_organization.sh && /full/path/to/files_backup.sh
 
-- After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit
-
 - **Note:**
 
-The scripts shown above will run at noon, so make sure you know how to set up cron scheduling.
+After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit. The scripts shown above will run at noon, so make sure you know how to set up cron scheduling.
 
 # 3. Technologies
 
