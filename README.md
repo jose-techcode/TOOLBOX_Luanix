@@ -175,4 +175,4 @@ This project is licensed under the MIT license.
 
 # 10. Notes
 
-This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use Docker for some scripts, given the dependence on the operating system for the correct functioning of the automations. But, can use the scripts update_clean.sh and update_install.sh in Docker. Much of this project is for learning purposes.
+This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use Docker for some scripts, given the dependence on the operating system for the correct functioning of the automations. But, can use the scripts update_clean.sh in Docker. Much of this project is for learning purposes.
