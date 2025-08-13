@@ -22,4 +22,4 @@ WORKDIR /workspace
 
 # Define the entrypoint with shell scripting (bash) and run test scripts in docker container
 
-ENTRYPOINT ["/bin/bash", "-c", "/scripts/update_clean.sh && /scripts/update_install.sh && /scripts/update_clean.sh"]
+ENTRYPOINT ["/bin/bash", "-c", "/scripts/update_clean.sh"]
