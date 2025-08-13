@@ -60,9 +60,9 @@ crontab -e
 
 - Add scripts that can be scheduled, like the ones below
 
-0 12 * * * /full/path/to/update_clean.sh
-0 12 * * * /full/path/to/files_organization.sh
-0 12 * * * /full/path/to/files_backup.sh
+- 0 12 * * * /full/path/to/update_clean.sh
+- 0 12 * * * /full/path/to/files_organization.sh
+- 0 12 * * * /full/path/to/files_backup.sh
 
 - After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit
 
