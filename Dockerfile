@@ -11,11 +11,6 @@ RUN mkdir -p /scripts
 COPY scripts/update_clean.sh /scripts/update_clean.sh
 RUN chmod +x /scripts/update_clean.sh
 
-# Copy update_install.sh script (with full directory path)
-
-COPY scripts/update_install.sh /scripts/update_install.sh
-RUN chmod +x /scripts/update_install.sh
-
 # Define the directory inside the container
 
 WORKDIR /workspace
