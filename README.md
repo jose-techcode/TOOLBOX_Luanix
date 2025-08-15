@@ -77,6 +77,7 @@ After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit. T
 - Containerization: Docker
 - Scanner (docker image): Trivy
 - CI: Github Actions
+- Virtual Machine: VirtualBox
 - Optional: Cron
 
 # 4. Clone the Repository
@@ -149,9 +150,9 @@ docker run --rm --privileged toolbox_luanix:latest
 
 - terraform plan - Show what terraform will create, change, and destroy.
 
-- terraform apply (optional: -auto-approve) - Applies infrastructure provisioning (container).
+- terraform apply (optional: -auto-approve) - Applies infrastructure provisioning (container or virtual machine).
 
-- terraform destroy (optional: -auto-approve) - Destroy infrastrcture (container).
+- terraform destroy (optional: -auto-approve) - Destroy infrastrcture (container or virtual machine).
 
 - terraform fmt - Formats the organization of .tf files.
 
@@ -163,7 +164,7 @@ docker run --rm --privileged toolbox_luanix:latest
 
 - **Note:** 
 
-There are other Terraform commands, but they are not yet applicable to this project. Terraform in this project is more for learning purposes, as the docker_trivy.sh script solves much of the problem proposed to be solved by Terraform. Terraform can be used to provision virtual machines on machines that are not very modest.
+There are other Terraform commands, but they are not yet applicable to this project. Terraform in this project is more for learning purposes, as the docker_trivy.sh script solves much of the problem proposed to be solved by Terraform in relation to Docker. Terraform to provision virtual machines in this project is completely experimental, expect bugs. To use virtual machine, you need get debian.ova or debian.ovf in VirtualBox. If Terraform gives an error even after creating the virtual machine, it is probably a false positive.
 
 # 8. Contribution
 
@@ -175,4 +176,4 @@ This project is licensed under the MIT license.
 
 # 10. Notes
 
-This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use Docker for some scripts, given the dependence on the operating system for the correct functioning of the automations. But, can use the scripts update_clean.sh in Docker. Much of this project is for learning purposes.
+This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use Docker for some scripts, given the dependence on the operating system for the correct functioning of the automations. But, can use the script update_clean.sh in Docker until then. Much of this project is for learning purposes, mainly the virtual machine part.
