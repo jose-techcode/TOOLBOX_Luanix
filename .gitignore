@@ -1,8 +1,14 @@
 # Terraform
 
 terraform-provider-docker_v2.15.0
+terraform-provider-virtualbox_v0.2.2-alpha.1
+.terraform.tfstate.lock.info
 terraform.tfstate
 terraform.tfstate.backup
+
+# OVA (VirtualBox)
+
+debian-13-vm.ova
 
 # Logs and temporaries
 
