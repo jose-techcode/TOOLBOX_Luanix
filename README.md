@@ -4,63 +4,63 @@ The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization,
 
 # 2. Permissions (cd scripts)
 
-- chmod +x audit_logs.sh
+- `chmod +x audit_logs.sh`
 
-- chmod +x files_backup.sh
+- `chmod +x files_backup.sh`
 
-- chmod +x files_organization.sh
+- `chmod +x files_organization.sh`
 
-- chmod +x update_clean.sh
+- `chmod +x update_clean.sh`
 
-- chmod +x update_install.sh
+- `chmod +x update_install.sh`
 
-- (project root) chmod +x docker_trivy.sh
+- (project root) `chmod +x docker_trivy.sh`
 
 # 2.1. Features (cd scripts)
 
-- sudo ./audit_logs.sh - Audit of system log and authentication log.
+- `sudo ./audit_logs.sh` - Audit of system log and authentication log.
 
-- ./files_backup.sh - Backup files from the documents, music, pictures, videos and downloads
+- `./files_backup.sh` - Backup files from the documents, music, pictures, videos and downloads
 directories.
 
-- ./files_organization.sh - Organizing file extensions into their respective directories.
+- `./files_organization.sh` - Organizing file extensions into their respective directories.
 
-- sudo ./update_clean.sh - Update and upgrade packages, remove orphaned dependencies and clean old packages.
+- `sudo ./update_clean.sh` - Update and upgrade packages, remove orphaned dependencies and clean old packages.
 
-- sudo ./update_install.sh - Update, upgrade and installs packages.
+- `sudo ./update_install.sh` - Update, upgrade and installs packages.
 
-- (project root) ./docker_trivy.sh - Build a Docker image and scan it with Trivy.
+- (project root) `./docker_trivy.sh` - Build a Docker image and scan it with Trivy.
 
 # 2.2. Makefile features (project root)
 
-- sudo make logs - Audit of system log and authentication log.
+- `sudo make logs` - Audit of system log and authentication log.
 
-- make backup - Backup files from the documents, music, pictures, videos and downloads
+- `make backup` - Backup files from the documents, music, pictures, videos and downloads
 directories.
 
-- make organization - Organizing file extensions into their respective directories.
+- `make organization` - Organizing file extensions into their respective directories.
 
-- sudo make clean - Update and upgrade packages, remove orphaned dependencies and clean old packages.
+- `sudo make clean` - Update and upgrade packages, remove orphaned dependencies and clean old packages.
 
-- sudo make install - Update, upgrade and installs packages.
+- `sudo make install` - Update, upgrade and installs packages.
 
-- make image - Build a Docker image and scan it with Trivy.
+- `make image` - Build a Docker image and scan it with Trivy.
 
 # 2.3. Ansible features (cd ansible)
 
-- ansible-playbook playbook_sudo.yml --ask-become-pass - Update, upgrade and install packages, remove orphaned dependencies and clean old packages.
+- `ansible-playbook playbook_sudo.yml --ask-become-pass` - Update, upgrade and install packages, remove orphaned dependencies and clean old packages.
 
-- ansible-playbook playbook_user.yml - Organization of files by extensions and backup of files of main directories.
+- `ansible-playbook playbook_user.yml` - Organization of files by extensions and backup of files of main directories.
 
 # 2.4. Cron guide
 
 - Open the cron file
 
-crontab -e
+`crontab -e`
 
 - Add scripts that can be scheduled, like the ones below (with &&)
 
-0 12 * * * /full/path/to/update_clean.sh && /full/path/to/files_organization.sh && /full/path/to/files_backup.sh
+`0 12 * * * /full/path/to/update_clean.sh && /full/path/to/files_organization.sh && /full/path/to/files_backup.sh`
 
 - **Note:**
 
@@ -84,83 +84,83 @@ After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit. T
 
 - Bash
 
-git clone https://github.com/jose-techcode/TOOLBOX_Luanix
+`git clone https://github.com/jose-techcode/TOOLBOX_Luanix`
 
 # 5. Project Folder
 
 - Bash
 
-cd TOOLBOX_Luanix
+`cd TOOLBOX_Luanix`
 
 # 5.1. Scripts Folder
 
 - Bash
 
-cd scripts
+`cd scripts`
 
 # 5.2. Ansible Folder
 
 - Bash
 
-cd ansible
+`cd ansible`
 
 # 5.3. Terraform Folder
 
 - Bash
 
-cd terraform
+`cd terraform`
 
 # 6. Run in Docker (only some scripts)
 
 - Build the image
 
-docker build -t toolbox_luanix .
+`docker build -t toolbox_luanix .`
 
 - Scan the Docker image with Trivy (false positives are expected)
 
-trivy image toolbox_luanix:latest
+`trivy image toolbox_luanix:latest`
 
 - Run the image with privileges
 
-docker run --rm --privileged toolbox_luanix:latest
+`docker run --rm --privileged toolbox_luanix:latest`
 
 # 6.1. Run in Docker (only some scripts with bash)
 
 - Execute this script to build Docker image and scan with Trivy
 
-./docker_trivy.sh
+`./docker_trivy.sh`
 
 - Run the image with privileges
 
-docker run --rm --privileged toolbox_luanix:latest
+`docker run --rm --privileged toolbox_luanix:latest`
 
 # 6.2. Run in Docker (only some scripts with makefile)
 
 - Execute this makefile command to build Docker image and scan with Trivy
 
-make image
+`make image`
 
 - Run the image with privileges
 
-docker run --rm --privileged toolbox_luanix:latest
+`docker run --rm --privileged toolbox_luanix:latest`
 
 # 7. Terraform features (cd terraform)
 
-- terraform init - Start the project directory.
+- `terraform init` - Start the project directory.
 
-- terraform plan - Show what terraform will create, change, and destroy.
+- `terraform plan` - Show what terraform will create, change, and destroy.
 
-- terraform apply (optional: -auto-approve) - Applies infrastructure provisioning (container or virtual machine).
+- `terraform apply` (optional: -auto-approve) - Applies infrastructure provisioning (container or virtual machine).
 
-- terraform destroy (optional: -auto-approve) - Destroy infrastrcture (container or virtual machine).
+- `terraform destroy` (optional: -auto-approve) - Destroy infrastrcture (container or virtual machine).
 
-- terraform fmt - Formats the organization of .tf files.
+- `terraform fmt` - Formats the organization of .tf files.
 
-- terraform validate - Check if the terraform configuration is correct.
+- `terraform validate` - Check if the terraform configuration is correct.
 
-- terraform show - Show the status of infrastructure.
+- `terraform show` - Show the status of infrastructure.
 
-- terraform graph - Show the dependency graph.
+- `terraform graph` - Show the dependency graph.
 
 - **Note:** 
 
