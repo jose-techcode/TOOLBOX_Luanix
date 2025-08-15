@@ -19,7 +19,7 @@ resource "docker_image" "toolbox_luanix" {
   name = "toolbox_luanix:latest"
 
   build {
-    path = "~/Documentos/TOOLBOX_Luanix/" # full directory path
+    path = "~/Documentos/TOOLBOX_Luanix"
     dockerfile = "Dockerfile"
   }
 }
