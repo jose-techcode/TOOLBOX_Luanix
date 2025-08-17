@@ -90,6 +90,24 @@ ufw enable
 
 echo ""
 
+# Note: configure the firewall to activate protection
+
+# -----Fail2ban-----
+
+echo "-----Installing fail2ban-----"
+echo ""
+
+apt install fail2ban
+
+echo "-----Enabling and starting fail2ban"
+echo ""
+
+systemctl enable --now fail2ban
+
+echo ""
+
+# Note: configure the fail2ban to block brute force of SSH
+
 # -----GIT & CLI TOOLS-----
 
 # Installation of git, nano, vim, htop and neofetch
