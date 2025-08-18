@@ -1,6 +1,6 @@
 # 1. TOOLBOX Luanix
 
-The "TOOLBOX Luanix" is a toolbox that automates file backup, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts in .deb is not recommended, as they are intended solely for the debian operating system, and due to their complexity. The shell scripting language used was bash. If you want, you can schedule some scripts with cron, using crontab -e in terminal. Nano editor is recommended for cron.
+The "TOOLBOX Luanix" is a toolbox that automates backup of files, file organization, system cleanup, tool installation, and log auditing tasks. Packaging these scripts in .deb is not recommended, as they are intended solely for the Debian operating system, and due to their complexity. The shell scripting language used was bash. If you want, you can schedule some scripts with cron, using crontab -e in terminal. Nano editor is recommended for cron.
 
 # 2. Permissions (cd scripts)
 
@@ -109,7 +109,7 @@ After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit. T
 
 `cd terraform`
 
-# 6. Run in Docker (only one script)
+# 6. Run in Docker (experimental)
 
 - Build the image
 
@@ -123,7 +123,7 @@ After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit. T
 
 `docker run --rm --privileged toolbox_luanix:latest`
 
-# 6.1. Run in Docker (only one script with bash)
+# 6.1. Run in Docker (experimental with Bash)
 
 - Execute this script to build Docker image and scan with Trivy
 
@@ -133,7 +133,7 @@ After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit. T
 
 `docker run --rm --privileged toolbox_luanix:latest`
 
-# 6.2. Run in Docker (only one script with makefile)
+# 6.2. Run in Docker (experimental with Makefile)
 
 - Execute this makefile command to build Docker image and scan with Trivy
 
@@ -163,7 +163,7 @@ After adding the scripts, press CTRL + O + Enter to save and CTRL + X to exit. T
 
 - **Note:** 
 
-There are other Terraform commands, but they are not yet applicable to this project. Terraform in this project is more for learning purposes, as the docker_trivy.sh script solves much of the problem proposed to be solved by Terraform in relation to Docker. Terraform to provision local virtual machine is not recommended.
+There are other Terraform commands, but they are not yet applicable to this project. Terraform in this project is more for learning purposes, as the docker_trivy.sh script with makefile solves much of the problem proposed to be solved by Terraform in relation to Docker. Terraform to provision local virtual machine is not recommended depending on your case.
 
 # 8. Contribution
 
@@ -175,4 +175,4 @@ This project is licensed under the MIT license.
 
 # 10. Notes
 
-This scripting toolbox is intended exclusively for the debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use Docker for some scripts, given the dependence on the operating system for the correct functioning of the automations. But, can use the script update_clean.sh in Docker until then. Much of this project is for learning purposes.
+This scripting toolbox is intended exclusively for the Debian operating system. It is not guaranteed to work on other linux distros without adaptation. It is not recommended to use Docker for some scripts, given the dependence on the operating system for the correct functioning of the automations. But, you can use some scripts experimentally in Docker. Much of this project is for learning purposes. Finished.
